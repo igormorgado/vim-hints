@@ -1,4 +1,4 @@
-*git.txt*    For 7.4     Last change: 2018 January 01
+*git.txt*    Git hints
 *git*
 
 Git daily hints

@@ -1,25 +1,29 @@
-*todo.txt*    Things TODO
-*todo*  *TODO*
+*ipython.txt*    iPython hints
+*ipython* 
 
 Stuff to do
 
 ==============================================================================
 CONTENTS
 
-1. |Texec|	
-2. |Flattened|
+1. |Memwatcher|	
 
 ==============================================================================
 
-Texec							*Texec*
+Memwatcher						*Memwatcher*
 
- - Set texec last  as default if nothing is passwd
+To start to monitor memory usage in iPython
 
-==============================================================================
+```
+from ipython_memwatcher import MemWatcher
+mw = MemWatcher()
+mw.start_watching_memory()
+# DO STUFF
+mw.measurements
+mw.measurements.memory_delta
+mw.stop_watching_memory()
+```
 
-Flattened						*Flatenned*
-
- - Customize flattened comment color
 
 ==============================================================================
 vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:

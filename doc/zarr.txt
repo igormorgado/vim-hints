@@ -1,4 +1,4 @@
-*zarr.txt*    For 7.4     Last change: 2018 January 01
+*zarr.txt*    Python zarr hints
 *zarr*
 
 Zarr hints for daily use
@@ -33,9 +33,11 @@ datadir=os.path.join('data','z_disk')
 disk_store = zarr.DirectoryStore(datadir)
 z_disk = zarr.empty_like(z_memory, store=disk_store)
 z_disk[:] = z_memory
+del(z_memory)
 
 sorted(os.listdir(datadir))
 ```
+
 
 ==============================================================================
 

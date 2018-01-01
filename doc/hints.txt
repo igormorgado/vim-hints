@@ -1,4 +1,4 @@
-*hints.txt*    For 7.4     Last change: 2018 January 01
+*hints.txt*    Hints for simpler life
 *hints*
 
 Entry point for all my hints
