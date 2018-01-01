@@ -32,8 +32,12 @@ z_memory[:,0] = np.arange(N)
 
 # Creates the disk storage like the memory data and copy
 datadir=os.path.join('data','z_disk')
+
+chunksize = 2**24
+chunks = (int(chunksize / z_memory.shape[1]), z_memory.shape[1])
+
 disk_store = zarr.DirectoryStore(datadir)
-z_disk = zarr.empty_like(z_memory, store=disk_store)
+z_disk = zarr.empty_like(z_memory, chunks=chunks, store=disk_store)
 z_disk[:] = z_memory
 del(z_memory)
 
