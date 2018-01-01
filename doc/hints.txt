@@ -11,6 +11,7 @@ CONTENTS
 |zarr.txt|	Python zarray 
 |git.txt|	Git stuff
 |ipython.txt|	ipython 
+|pandas.txt|	Pandas stuff
 
 ==============================================================================
 

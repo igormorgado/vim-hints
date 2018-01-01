@@ -1,0 +1,53 @@
+*pandas.txt*   Pandas hints
+*pandas* 
+
+Pandas hints
+
+==============================================================================
+CONTENTS
+
+1. |pandas_Categories|	
+
+==============================================================================
+
+Categories						*pandas_Categories*
+
+Categories are a way to convert numerical/string data in a group of
+categories. The main use is to reduce the ammount of memory and speedup the
+searches.
+
+------------------------------------------------------------------------------
+Regular column to category				*pandas_col2cat*
+
+Convert regular object, int or strings to categories.
+
+```
+import pandas as pd
+df = pd.DataFrame({'col1':[1,2,3,4,5], 'col2':list('abcab'),  'col3':list('ababb')})
+df.dtypes
+
+df['col2'] = df['col2'].astype('category')
+df['col3'] = df['col3'].astype('category')
+df.dtypes
+
+df['col2']
+df['col3']
+```
+
+------------------------------------------------------------------------------
+Categories to integers					*pandas_cat2int*
+
+Convert categories to integer values. You will lose category information
+
+```
+import pandas as pd
+df = pd.DataFrame({'col1':[1,2,3,4,5], 'col2':list('abcab'),  'col3':list('ababb')})
+df['col2'] = df['col2'].astype('category')
+df['col3'] = df['col3'].astype('category')
+
+cat_columns = df.select_dtypes(['category']).columns
+df[cat_columns] = df[cat_columns].apply(lambda x: x.cat.codes)
+```
+
+==============================================================================
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:
