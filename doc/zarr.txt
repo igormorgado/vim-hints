@@ -1,0 +1,38 @@
+*zarr.txt*    For 7.4     Last change: 2018 January 01
+*zarr*
+
+Zarr hints for daily use
+
+==============================================================================
+CONTENTS
+
+1. |zarr_mem2disk|     Copying zarray from memory to disk 
+
+==============================================================================
+
+From memory to disk                                      *zarr_mem2disk*
+
+Shows how to create a disk stored data from memory stored data
+
+```
+# Create numpy data
+
+import zarr
+import numpy as np
+
+# Creating a 2d memory space with integers
+N = int(1e5)
+z_memory = zarr.zeros((N,N), dtype='i4')
+z_memory[:] = 42
+z_memory[0,:] = np.arange(N)
+z_memory[:,0] = np.arange(N)
+
+# Creates the disk storage like the memory data and copy
+disk_store = zarr.DirectoryStore('data/z_disk')
+z_disk = zarr.empty_like(z_memory)
+z_disk[:] = z_memory
+```
+
+==============================================================================
+
+# vim: ft=help ts=4 sw=4 et cc=80:
