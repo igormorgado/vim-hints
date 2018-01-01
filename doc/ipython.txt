@@ -1,7 +1,7 @@
 *ipython.txt*    iPython hints
 *ipython* 
 
-Stuff to do
+Ipython hints
 
 ==============================================================================
 CONTENTS

@@ -1,4 +1,4 @@
-*vim.txt*    Hints for vim, store in disk is better than in brain
+*vimhints.txt*    Hints for vim, store in disk is better than in brain
 *vimhints* 
 
 Add my vim hints here

@@ -6,10 +6,11 @@ Entry point for all my hints
 ==============================================================================
 CONTENTS
 
-0. |todo|	Things todo
-1. |vimhints|	Vim hints
-2. |zarr|	Python zarray 
-3. |git|	Git stuff
+|mytodo.txt|	Things todo
+|vimhints.txt|	Vim hints
+|zarr.txt|	Python zarray 
+|git.txt|	Git stuff
+|ipython.txt|	ipython 
 
 ==============================================================================
 

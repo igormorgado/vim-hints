@@ -1,5 +1,5 @@
-*todo.txt*    Things TODO
-*todo*  *TODO*
+*mytodo.txt*    Things TODO
+*mytodo*  *MYTODO*
 
 Stuff to do
 
@@ -22,4 +22,5 @@ Flattened						*Flatenned*
  - Customize flattened comment color
 
 ==============================================================================
+
 vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:
