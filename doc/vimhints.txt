@@ -35,4 +35,4 @@ VIMSCRIPT						*vimscript*
 
 ==============================================================================
 
-vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:noma:
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:mod:
