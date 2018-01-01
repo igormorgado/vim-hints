@@ -6,7 +6,9 @@ Zarr hints for daily use
 ==============================================================================
 CONTENTS
 
-1. |zarr_mem2disk|     Copying zarray from memory to disk 
+|zarr_mem2disk|     Copying zarray from memory to disk 
+|zarr_opendisk|	  Opening files from disk
+
 
 ==============================================================================
 
@@ -38,6 +40,15 @@ del(z_memory)
 sorted(os.listdir(datadir))
 ```
 
+------------------------------------------------------------------------------
+
+Opening data from disk					*zarr_opendisk*
+
+To open a zarr file from disk use:
+
+```
+z = zarr.open(datadir)
+```
 
 ==============================================================================
 
