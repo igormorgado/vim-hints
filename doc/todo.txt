@@ -1,5 +1,5 @@
 *todo.txt*    Things TODO
-*todo*  *TODO*
+*mytodo*  *MYTODO*
 
 Stuff to do
 
