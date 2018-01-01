@@ -50,4 +50,4 @@ df[cat_columns] = df[cat_columns].apply(lambda x: x.cat.codes)
 ```
 
 ==============================================================================
-vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:noma:

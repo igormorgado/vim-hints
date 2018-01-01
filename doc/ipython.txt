@@ -26,4 +26,4 @@ mw.stop_watching_memory()
 
 
 ==============================================================================
-vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:noma:

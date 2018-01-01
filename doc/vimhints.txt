@@ -16,6 +16,7 @@ CONTENTS
 NORMAL MODE 	 					*normal_mode*
 
  ge		Go to the end of previous word
+ ciw		Change the word over cursor
 
 ==============================================================================
 
@@ -34,4 +35,4 @@ VIMSCRIPT						*vimscript*
 
 ==============================================================================
 
-vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:noma:
