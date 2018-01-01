@@ -17,6 +17,7 @@ Shows how to create a disk stored data from memory stored data
 ```
 # Create numpy data
 
+import os
 import zarr
 import numpy as np
 
@@ -28,11 +29,14 @@ z_memory[0,:] = np.arange(N)
 z_memory[:,0] = np.arange(N)
 
 # Creates the disk storage like the memory data and copy
-disk_store = zarr.DirectoryStore('data/z_disk')
-z_disk = zarr.empty_like(z_memory)
+datadir=os.path.join('data','z_disk')
+disk_store = zarr.DirectoryStore(datadir)
+z_disk = zarr.empty_like(z_memory, store=disk_store)
 z_disk[:] = z_memory
+
+sorted(os.listdir(datadir))
 ```
 
 ==============================================================================
 
-# vim: ft=help ts=4 sw=4 et cc=80:
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:

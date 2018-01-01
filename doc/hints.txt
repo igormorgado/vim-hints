@@ -6,8 +6,11 @@ Entry point for all my hints
 ==============================================================================
 CONTENTS
 
-1. |zarr|	Python zarray 
+0. |todo|	Things todo
+1. |vimhints|	Vim hints
+2. |zarr|	Python zarray 
+3. |git|	Git stuff
 
 ==============================================================================
 
-# vim: ft=help ts=4 sw=4 et cc=80:
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:

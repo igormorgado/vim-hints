@@ -1,0 +1,37 @@
+*vim.txt*    For 7.4     Last change: 2018 January 01
+*vimhints* 
+
+Add my vim hints here
+
+==============================================================================
+CONTENTS
+
+1. |normal_mode|		Normal mode hints
+2. |insert_mode|		Insert mode hints
+3. |visual_mode|		Visual mode hints
+4. |vimscipt|			Vim script hints
+
+==============================================================================
+
+NORMAL MODE 	 					*normal_mode*
+
+ ge		Go to the end of previous word
+
+==============================================================================
+
+INSERT MODE 						*insert_mode*
+
+
+==============================================================================
+
+VISUAL MODE						*visual_mode*
+
+
+==============================================================================
+
+VIMSCRIPT						*vimscript*
+
+
+==============================================================================
+
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:

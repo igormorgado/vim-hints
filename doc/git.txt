@@ -1,0 +1,25 @@
+*git.txt*    For 7.4     Last change: 2018 January 01
+*git*
+
+Git daily hints
+
+==============================================================================
+CONTENTS
+
+1. |git_passwd_store|     Storing passwords 
+
+==============================================================================
+
+Storing git passwords                                      *git_passwd_store*
+
+Shows how to store git password
+
+```
+cd <GITREPOSITORY>
+git config credential.helper store
+git config credential.helper cache 900
+```
+
+==============================================================================
+
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:

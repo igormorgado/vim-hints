@@ -1,0 +1,25 @@
+*vimhints.txt*    For 7.4     Last change: 2018 January 01
+*vimhints* 
+
+Stuff to do
+
+==============================================================================
+CONTENTS
+
+1. |Texec|	
+2. |Flattened|
+
+==============================================================================
+
+Texec							*Texec*
+
+ - Set texec last  as default if nothing is passwd
+
+==============================================================================
+
+Flattened						*Flatenned*
+
+ - Customize flattened comment color
+
+==============================================================================
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:
