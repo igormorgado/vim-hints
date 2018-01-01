@@ -1,0 +1,13 @@
+*hints.txt*    For 7.4     Last change: 2018 January 01
+*hints*
+
+Entry point for all my hints
+
+==============================================================================
+CONTENTS
+
+1. |zarr|	Python zarray 
+
+==============================================================================
+
+# vim: ft=help ts=4 sw=4 et cc=80:
