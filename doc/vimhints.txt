@@ -9,14 +9,57 @@ CONTENTS
 1. |normal_mode|		Normal mode hints
 2. |insert_mode|		Insert mode hints
 3. |visual_mode|		Visual mode hints
-4. |vimscipt|			Vim script hints
+4. |command_mode|		Command mode hints
+5. |vimhints_netrw|		Netrw shortcuts
+6. |vimscipt|			Vim script hints
 
 ==============================================================================
 
 NORMAL MODE 	 					*normal_mode*
 
+
+------------------------------------------------------------------------------
+							*vimhints_movement*
+
+ b		Previou start of word
+ w		Next start of word
+ e		Next end of word
+ B		Previou start of WORD
+ W		Next start of WORD
+ E		Next end of WORD
  ge		Go to the end of previous word
+ f{char}	Next occurence of {char}
+
+ [{ ]}		Go to begin/end of code block
+ [( ])		go to begin/end of codeblock
+
+
+------------------------------------------------------------------------------
+							*vimhints_edition*
+
  ciw		Change the word over cursor
+ ciW		Change the WORD over cursor
+ viw		Select the word over cursor (enter visual mode)
+ viW		Select the WORD over cursor (enter visual mode)
+
+ gqq		Reflow paragraph
+ gqG		Reflow to EOF
+
+------------------------------------------------------------------------------
+							*vimhints_tags*
+
+ <C-w>g]	Open tag in new split
+ <C-w>]
+ <C-w>g}
+
+------------------------------------------------------------------------------
+							*vimhints_window*
+
+ <C-W>{num}+	Expand window {num} verticaly
+ <C-W>{num}-	Shorten window {num} verticaly
+ <C-W>{num}>	Expand left window {num} horizontaly
+ <C-W>{num}<	Expand right window {num} horizontaly
+
 
 ==============================================================================
 
@@ -27,8 +70,27 @@ INSERT MODE 						*insert_mode*
 
 VISUAL MODE						*visual_mode*
 
+ U		Change to uppercase
+
 
 ==============================================================================
+
+COMMAND MODE						*command_mode*
+
+:verbose map key	List all mapped keys
+:verbose map <SOMEKEY>	List who is mapping <SOMEKEY>
+:marks			List all marks
+
+==============================================================================
+
+NETRW							*vimhints_netrw*
+
+ a		change modes
+ gh		Toogle hiddenfiles
+ i		change views
+
+==============================================================================
+
 
 VIMSCRIPT						*vimscript*
 
