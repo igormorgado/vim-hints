@@ -59,6 +59,7 @@ NORMAL MODE 	 					*normal_mode*
  <C-W>{num}-	Shorten window {num} verticaly
  <C-W>{num}>	Expand left window {num} horizontaly
  <C-W>{num}<	Expand right window {num} horizontaly
+ <C-W>[HJKL]	Move window to the direction H J K L (changes hor/ver)
 
 
 ==============================================================================
