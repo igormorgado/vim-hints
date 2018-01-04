@@ -29,6 +29,7 @@ NORMAL MODE 	 					*normal_mode*
  E		Next end of WORD
  ge		Go to the end of previous word
  f{char}	Next occurence of {char}
+ t{char}	Before next occurence of
 
  [{ ]}		Go to begin/end of code block
  [( ])		go to begin/end of codeblock
@@ -41,6 +42,15 @@ NORMAL MODE 	 					*normal_mode*
  ciW		Change the WORD over cursor
  viw		Select the word over cursor (enter visual mode)
  viW		Select the WORD over cursor (enter visual mode)
+ vt{char}	Select to the {char}
+ ct{char}	Change to the {char}
+ dt{char}	Delete to the {char}
+ vf{char}	Select to the {char} (included)
+ cf{char}	Change to the {char} (included)
+ df{char}	Delete to the {char} (included)
+ vi{char}	Select surrounded by {char}
+ ci{char}	Change surronded by {char}
+ di{char}	Delete surrounded by {char}
 
  gqq		Reflow paragraph
  gqG		Reflow to EOF
