@@ -32,6 +32,11 @@ NORMAL MODE 	 					*normal_mode*
  F{char}	Previous occurence of {char}
  t{char}	Before next occurence of {char}
  T{char}	After previous occurence of {char}
+ ;		Repeat above in same direction
+ ,		Repeat above in opposite direction
+
+ _		First non blank character in line
+ g_		Last non blank character in line
 
  [{ ]}		Go to begin/end of code block
  [( ])		go to begin/end of codeblock
