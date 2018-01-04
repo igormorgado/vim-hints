@@ -29,7 +29,9 @@ NORMAL MODE 	 					*normal_mode*
  E		Next end of WORD
  ge		Go to the end of previous word
  f{char}	Next occurence of {char}
- t{char}	Before next occurence of
+ F{char}	Previous occurence of {char}
+ t{char}	Before next occurence of {char}
+ T{char}	After previous occurence of {char}
 
  [{ ]}		Go to begin/end of code block
  [( ])		go to begin/end of codeblock
@@ -76,12 +78,15 @@ NORMAL MODE 	 					*normal_mode*
 
 INSERT MODE 						*insert_mode*
 
+ jk		Quickly go to NORMAL MODE (do not move to esc)
+
 
 ==============================================================================
 
 VISUAL MODE						*visual_mode*
 
  U		Change to uppercase
+ u		Change to lowercase
 
 
 ==============================================================================
