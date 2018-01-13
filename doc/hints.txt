@@ -12,6 +12,7 @@ CONTENTS
 |git.txt|	Git stuff
 |ipython.txt|	ipython 
 |pandas.txt|	Pandas stuff
+|bash.txt|	Bash
 
 ==============================================================================
 

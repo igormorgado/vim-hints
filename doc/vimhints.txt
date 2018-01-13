@@ -6,12 +6,15 @@ Add my vim hints here
 ==============================================================================
 CONTENTS
 
-1. |normal_mode|		Normal mode hints
-2. |insert_mode|		Insert mode hints
-3. |visual_mode|		Visual mode hints
-4. |command_mode|		Command mode hints
-5. |vimhints_netrw|		Netrw shortcuts
-6. |vimscipt|			Vim script hints
+ |normal_mode|		Normal mode hints
+ |insert_mode|		Insert mode hints
+ |visual_mode|		Visual mode hints
+ |command_mode|		Command mode hints
+ |vimhints_netrw|	Netrw shortcuts
+ |vimscipt|		Vim script hints
+ |WordProcessorMode|	Enter in WordProcessor Mode function 
+ |AvoidWsitespaceCmp|	On diff avoid comparing whitespaces
+ |CreateVimTags|	Create vim tags
 
 ==============================================================================
 
@@ -40,6 +43,10 @@ NORMAL MODE 	 					*normal_mode*
 
  [{ ]}		Go to begin/end of code block
  [( ])		go to begin/end of codeblock
+ cs  iW iw eW
+ ds  iW iw
+ zo		open folded text
+ zc		close folded text
 
 
 ------------------------------------------------------------------------------
@@ -77,6 +84,39 @@ NORMAL MODE 	 					*normal_mode*
  <C-W>{num}>	Expand left window {num} horizontaly
  <C-W>{num}<	Expand right window {num} horizontaly
  <C-W>[HJKL]	Move window to the direction H J K L (changes hor/ver)
+
+
+------------------------------------------------------------------------------
+							*VimDiff*
+
+do			diff obtain
+dp			diff put
+:diffupdate		re-scan the files for differences
+:set diffopt+=iwhite	AvoidWhitespaceCmp
+:only
+
+------------------------------------------------------------------------------
+							*QuickFix_Move*
+
+]c :		next difference
+[c :		previous difference
+
+
+------------------------------------------------------------------------------
+Word Processor Mode 					*WordProcessorMode*
+
+func! WordProcessorMode()
+ setlocal textwidth=80
+ setlocal spell spelllang=en_us
+ setlocal noexpandtab
+ setlocal ft=text
+endfu
+
+
+------------------------------------------------------------------------------
+How to Create Vim Tags                              *CreateVimTags*
+
+:helptags DIR
 
 
 ==============================================================================
