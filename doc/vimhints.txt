@@ -43,8 +43,6 @@ NORMAL MODE 	 					*normal_mode*
 
  [{ ]}		Go to begin/end of code block
  [( ])		go to begin/end of codeblock
- cs  iW iw eW
- ds  iW iw
  zo		open folded text
  zc		close folded text
 
@@ -56,6 +54,14 @@ NORMAL MODE 	 					*normal_mode*
  ciW		Change the WORD over cursor
  viw		Select the word over cursor (enter visual mode)
  viW		Select the WORD over cursor (enter visual mode)
+ csiW		
+ dsiW		
+ csiw
+ dsiw
+ cseW
+ dseW
+ csew
+ dsew
  vt{char}	Select to the {char}
  ct{char}	Change to the {char}
  dt{char}	Delete to the {char}
