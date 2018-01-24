@@ -13,7 +13,7 @@ CONTENTS
  |vimhints_netrw|	Netrw shortcuts
  |vimscipt|		Vim script hints
  |WordProcessorMode|	Enter in WordProcessor Mode function 
- |AvoidWsitespaceCmp|	On diff avoid comparing whitespaces
+ |AvoidWhitespaceCmp|	On diff avoid comparing whitespaces
  |CreateVimTags|	Create vim tags
 
 ==============================================================================
@@ -118,6 +118,17 @@ func! WordProcessorMode()
  setlocal ft=text
 endfu
 
+
+------------------------------------------------------------------------------
+							DeleteAuGroup
+
+augroup <GROUPNAME>
+	au!
+augroup END
+
+augroup! <GROUPNAME>
+
+------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
 How to Create Vim Tags                              *CreateVimTags*

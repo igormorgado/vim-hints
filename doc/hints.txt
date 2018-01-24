@@ -13,6 +13,7 @@ CONTENTS
 |ipython.txt|	ipython 
 |pandas.txt|	Pandas stuff
 |bash.txt|	Bash
+|wayland.txt|	Wayland
 
 ==============================================================================
 
