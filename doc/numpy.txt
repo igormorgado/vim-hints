@@ -1,0 +1,30 @@
+*numpy*   Numpy hints
+*numpy* 
+
+Numpy hints
+
+==============================================================================
+CONTENTS
+
+1. |pandas_Categories|	
+
+==============================================================================
+
+Array conditional 				*numpy_Conditional*
+
+To create another array based in a condition use ```np.where``` as:
+
+
+```
+import numpy as np
+x = np.array([-2, -1, 0, 1, 2])
+np.where(x<0, -1, 1)
+```
+```
+Out: array([-1, -1,  1,  1,  1])
+```
+
+------------------------------------------------------------------------------
+
+==============================================================================
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:mod:
