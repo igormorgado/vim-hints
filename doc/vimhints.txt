@@ -6,29 +6,169 @@ Add my vim hints here
 ==============================================================================
 CONTENTS
 
-1. |normal_mode|		Normal mode hints
-2. |insert_mode|		Insert mode hints
-3. |visual_mode|		Visual mode hints
-4. |vimscipt|			Vim script hints
+ |normal_mode|		Normal mode hints
+ |insert_mode|		Insert mode hints
+ |visual_mode|		Visual mode hints
+ |command_mode|		Command mode hints
+ |vimhints_netrw|	Netrw shortcuts
+ |vimscipt|		Vim script hints
+ |WordProcessorMode|	Enter in WordProcessor Mode function 
+ |AvoidWhitespaceCmp|	On diff avoid comparing whitespaces
+ |CreateVimTags|	Create vim tags
 
 ==============================================================================
 
 NORMAL MODE 	 					*normal_mode*
 
+
+------------------------------------------------------------------------------
+							*vimhints_movement*
+
+ b		Previou start of word
+ w		Next start of word
+ e		Next end of word
+ B		Previou start of WORD
+ W		Next start of WORD
+ E		Next end of WORD
  ge		Go to the end of previous word
+ f{char}	Next occurence of {char}
+ F{char}	Previous occurence of {char}
+ t{char}	Before next occurence of {char}
+ T{char}	After previous occurence of {char}
+ ;		Repeat above in same direction
+ ,		Repeat above in opposite direction
+
+ _		First non blank character in line
+ g_		Last non blank character in line
+
+ [{ ]}		Go to begin/end of code block
+ [( ])		go to begin/end of codeblock
+ zo		open folded text
+ zc		close folded text
+
+
+------------------------------------------------------------------------------
+							*vimhints_edition*
+
  ciw		Change the word over cursor
+ ciW		Change the WORD over cursor
+ viw		Select the word over cursor (enter visual mode)
+ viW		Select the WORD over cursor (enter visual mode)
+ csiW		
+ dsiW		
+ csiw
+ dsiw
+ cseW
+ dseW
+ csew
+ dsew
+ vt{char}	Select to the {char}
+ ct{char}	Change to the {char}
+ dt{char}	Delete to the {char}
+ vf{char}	Select to the {char} (included)
+ cf{char}	Change to the {char} (included)
+ df{char}	Delete to the {char} (included)
+ vi{char}	Select surrounded by {char}
+ ci{char}	Change surronded by {char}
+ di{char}	Delete surrounded by {char}
+
+ gqq		Reflow paragraph
+ gqG		Reflow to EOF
+
+------------------------------------------------------------------------------
+							*vimhints_tags*
+
+ <C-w>g]	Open tag in new split
+ <C-w>]
+ <C-w>g}
+
+------------------------------------------------------------------------------
+							*vimhints_window*
+
+ <C-W>{num}+	Expand window {num} verticaly
+ <C-W>{num}-	Shorten window {num} verticaly
+ <C-W>{num}>	Expand left window {num} horizontaly
+ <C-W>{num}<	Expand right window {num} horizontaly
+ <C-W>[HJKL]	Move window to the direction H J K L (changes hor/ver)
+
+
+------------------------------------------------------------------------------
+							*VimDiff*
+
+do			diff obtain
+dp			diff put
+:diffupdate		re-scan the files for differences
+:set diffopt+=iwhite	AvoidWhitespaceCmp
+:only
+
+------------------------------------------------------------------------------
+							*QuickFix_Move*
+
+]c :		next difference
+[c :		previous difference
+
+
+------------------------------------------------------------------------------
+Word Processor Mode 					*WordProcessorMode*
+
+func! WordProcessorMode()
+ setlocal textwidth=80
+ setlocal spell spelllang=en_us
+ setlocal noexpandtab
+ setlocal ft=text
+endfu
+
+
+------------------------------------------------------------------------------
+							DeleteAuGroup
+
+augroup <GROUPNAME>
+	au!
+augroup END
+
+augroup! <GROUPNAME>
+
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+How to Create Vim Tags                              *CreateVimTags*
+
+:helptags DIR
+
 
 ==============================================================================
 
 INSERT MODE 						*insert_mode*
+
+ jk		Quickly go to NORMAL MODE (do not move to esc)
 
 
 ==============================================================================
 
 VISUAL MODE						*visual_mode*
 
+ U		Change to uppercase
+ u		Change to lowercase
+
 
 ==============================================================================
+
+COMMAND MODE						*command_mode*
+
+:verbose map key	List all mapped keys
+:verbose map <SOMEKEY>	List who is mapping <SOMEKEY>
+:marks			List all marks
+
+==============================================================================
+
+NETRW							*vimhints_netrw*
+
+ a		change modes
+ gh		Toogle hiddenfiles
+ i		change views
+
+==============================================================================
+
 
 VIMSCRIPT						*vimscript*
 

@@ -1,0 +1,36 @@
+*wayland.txt*    Wayland Hints
+*wayland*  *WAYLAND*
+
+
+==============================================================================
+CONTENTS
+
+|wayland_nested|
+|wayland_variables|
+|wayland_display|
+
+
+==============================================================================
+
+------------------------------------------------------------------------------
+							*wayland_nested*
+
+mutter --wayland --nested 
+
+
+------------------------------------------------------------------------------
+							*wayland_variables*
+
+MUTTER_DEBUG_NUM_DUMMY_MONITORS=2 
+MUTTER_DEBUG_DUMMY_MONITOR_SCALES=2,1
+
+
+------------------------------------------------------------------------------
+							*wayland_display*
+
+DISPLAY=:1 WAYLAND_DISPLAY=wayland-1 APP
+
+
+==============================================================================
+
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:mod:
