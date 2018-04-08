@@ -1,0 +1,26 @@
+*weechat.txt*	Weechat commands
+*weechat*
+
+Common commands for weechat
+
+==============================================================================
+CONTENTS
+
+|weechat_add_channel|     Adding a channel on auto login
+
+==============================================================================
+
+Adding channel on auto login				*weechat_add_channel*
+
+Command to add/remove channel to autologin
+
+```
+/set irc.server.freenode.autojoin "#python,#c,#allegro"
+```
+
+------------------------------------------------------------------------------
+
+
+==============================================================================
+
+vim:cc=79:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:mod:
