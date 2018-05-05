@@ -8,6 +8,7 @@ CONTENTS
 |wayland_nested|
 |wayland_variables|
 |wayland_display|
+|wayland_organize|
 
 
 ==============================================================================
@@ -29,6 +30,17 @@ MUTTER_DEBUG_DUMMY_MONITOR_SCALES=2,1
 							*wayland_display*
 
 DISPLAY=:1 WAYLAND_DISPLAY=wayland-1 APP
+
+
+------------------------------------------------------------------------------
+							*wayland_organize*
+
+loginctl
+loginctl show-session <SESSION_ID> -p Type
+weston-info
+echo $XDG_SESSION_TYPE
+$ ls /sys/class/drm
+$ cat /sys/class/drm/card0-LVDS-1/modes 
 
 
 ==============================================================================
